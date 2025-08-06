@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kivra's App - Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1 class="font">KIVRA</h1>
+      <p class="subtitle">Welcome to Kivra - Student Q&A Portal!</p>
+      <form method="POST" action="validate.php">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <br>
+      <div class="register">
+        Not a member? <a href="register.html">Register now</a>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="illustration">
+        <img src="template/images/Yeah.jpg" alt="Illustration" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

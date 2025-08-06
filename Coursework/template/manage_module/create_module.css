@@ -1,0 +1,150 @@
+/* Reset & base styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+}
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.error { background: #fdecea; color: #c62828; }
+.success { background: #e0f7e9; color: #2e7d32; }
+/* Container styling */
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    width: 800px;
+}
+
+/* Header */
+.card-header {
+    background-color: #000000;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+/* Title */
+.card-header h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Card Body */
+.card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form labels & inputs */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 15px;
+    color: #111;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Buttons */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color:white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-secondary:hover {
+    background-color: black;
+    color: white;   
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
