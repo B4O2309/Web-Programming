@@ -1,6 +1,6 @@
 <?php include 'get_module.php'; ?>
 <head>
-  <link rel="stylesheet" href="questions.css">
+  <link rel="stylesheet" href="questions/questions.css">
 </head>
 
 <div class="ask-container">
@@ -26,3 +26,4 @@
     <button type="submit" name="submit">📤 Post</button>
   </form>
 </div>
+
