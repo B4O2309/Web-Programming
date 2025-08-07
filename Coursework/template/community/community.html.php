@@ -39,11 +39,5 @@
     </div>
 <?php endforeach; ?>
 </div>
-
-<script>
-    function toggleMenu(elem) {
-        const menu = elem.nextElementSibling;
-        menu.classList.toggle("style"); 
-    }
-</script>
 </body>
+
