@@ -17,11 +17,9 @@ if (!$id) {
   exit();
 }
 
-// Load modules
 $stmtModules = $pdo->query("SELECT id, name FROM modules ORDER BY name ASC");
 $modules = $stmtModules->fetchAll();
 
-// Load question
 $stmt = $pdo->prepare("SELECT * FROM questions WHERE id = ? AND user_id = ?");
 $stmt->execute([$id, $_SESSION['user_id']]);
 $question = $stmt->fetch();
@@ -31,7 +29,6 @@ if (!$question) {
   exit();
 }
 
-// Handle update
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $text = $_POST['text'] ?? '';
   $module_id = $_POST['module_id'] ?? $question['module_id'];
